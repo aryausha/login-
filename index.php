@@ -16,15 +16,15 @@
                 <table class="table table-borderless">
                     <tr>
                         <td>EMAIL ID</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="id" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>PASSWORD</td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><input type="password" id="pword" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-danger">LOGIN</button></td>
+                        <td><button onclick="index()" class="btn btn-danger">LOGIN</button></td>
                     </tr>
                 </table>
             </div>
@@ -34,31 +34,31 @@
                 <table class="table table-borderless">
                     <tr>
                         <td>NAME</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="name" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>DOB</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="dob" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>PLACE</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="place" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>EMAIL ID</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" id="mail" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>PASSWORD</td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><input type="password" id="pass" class="form-control"></td>
                     </tr>
                     <tr>
                         <td>CONFIRM PASSWORD</td>
-                        <td><input type="password" class="form-control"></td>
+                        <td><input type="password" id="conpass" class="form-control"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-success">REGISTER</button></td>
+                        <td><button onclick="login()" class="btn btn-success">REGISTER</button></td>
                     </tr>
 
 
@@ -74,6 +74,44 @@
 
 
     </div>
+    <script>
+        function login()
+        {
+            var name=document.getElementById("name").value
+            var dob=document.getElementById("dob").value
+            var place=document.getElementById("place").value
+            var email=document.getElementById("mail").value
+
+            var password=document.getElementById("pass").value
+            var confirm=document.getElementById("conpass").value
+
+
+            console.log(name)
+            console.log(dob)
+            console.log(place)
+            console.log(email)
+            console.log(password)
+            console.log(confirm)
+
+
+
+
+
+
+        }
+        function index()
+        {
+            var email=document.getElementById("id").value
+            var pass=document.getElementById("pword").value
+
+
+            console.log(email)
+            console.log(pass)
+        }
+
+
+
+    </script>
     
 </body>
 </html>
